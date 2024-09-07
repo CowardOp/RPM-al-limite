@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../src/img/logo-repuestos.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="../src/css/main.css" />
+    <link rel="stylesheet" href="../src/css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+  </head>
+  <body class="bg-[#09111d]">
+    <header class="w-full text-white">
+      <nav
+        class="top-0 flex w-full items-center gap-5 py-2 ps-3 bg-[#344955] text-white"
+      >
+        <a href="#banner"
+          ><img
+            class="w-12"
+            src="../src/img/logo-repuestos.png"
+            alt="logo_empresa"
+        /></a>
+        <ul class="flex w-3/4 gap-4">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="#sobreNosotros">Sobre nosotros</a></li>
+          <li class="relative">
+            <button
+              id="productButton"
+              class="menu-button flex gap-3 items-center"
+            >
+              Productos
+              <i id="menuIcon" class="menu-icon fa-regular fa-down-to-line"></i>
+            </button>
+            <div id="productMenu" class="product-menu ps-1 bg-[#1E201E]">
+              <ul class="flex flex-col gap-2 py-1 divide-y divide-white">
+                <li class="item pt-1">
+                  <a href="./products.html#motor"
+                    >Motor y Transmisión <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./products.html#frenos"
+                    >Sistema de Frenos <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./products.html#suspension"
+                    >Suspensión y Dirección
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./products.html#combustible"
+                    >Sistema de Combustible
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./products.html#electrico"
+                    >Sistema Eléctrico <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./products.html#escape"
+                    >Sistema de Escape <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./products.html#carroseria"
+                    >Carrocería y Accesorios
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./products.html#herramientas"
+                    >Herramientas y Mantenimiento
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item py-1 flex items-center">
+                  <a href="./products.html#ropa"
+                    >Ropa y Equipos de Protección
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li><a href="#contactos">Contactos</a></li>
+          <li class="ms-5">
+            <a href=""
+              ><i class="shop fa-duotone fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="flex absolute right-0 w-1/5 gap-2 pe-4">
+          <button id="logIn" class="btn btn-sm btn-primary w-2/5">
+            Iniciar Sesion
+          </button>
+          <button id="logOut" class="btn btn-sm btn-primary w-2/5">
+            Registrarse
+          </button>
+          <button class="w-8">
+            <i class="fa-solid fa-right-to-bracket"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main
+      class="particles divide-y-4 divide-white text-black relative overflow-hidden"
+    >
+      <section id="sobreNosotros" class="cont-about">
+        <div class="about-issue">
+          <h1 class="about-title">Sobre Nosotros</h1>
+          <p class="about-text">
+            RPM al Límite es tu socio confiable en el mundo de las motocicletas.
+            Fundada en 2010, nuestra empresa se ha dedicado a ofrecer repuestos
+            de alta calidad para motocicletas de todas las marcas y modelos.
+            Desde nuestro inicio, hemos trabajado con un solo objetivo:
+            proporcionar a nuestros clientes las mejores piezas y accesorios
+            para que sus motocicletas funcionen a la perfección.
+          </p>
+        </div>
+      </section>
+
+      <section class="cont-about gap-5">
+        <div
+          class="mision flex flex-col items-center justify-center py-[10px] px-[15px] w-2/5"
+        >
+          <h1 class="about-title">Nuestra Misión</h1>
+          <p class="about-text">
+            En RPM al Límite, nuestra misión es ser el proveedor de repuestos
+            para motocicletas más confiable y accesible del mercado. Nos
+            comprometemos a ofrecer productos de alta calidad, a precios
+            competitivos y con un servicio al cliente excepcional. Nuestra meta
+            es garantizar que cada motociclista pueda mantener y mejorar su
+            vehículo con facilidad y seguridad.
+          </p>
+        </div>
+        <div
+          class="mision flex flex-col items-center justify-center py-[10px] px-[15px] w-2/5"
+        >
+          <h1 class="about-title">Nuestra Visión</h1>
+          <p class="about-text">
+            Queremos ser reconocidos como líderes en la industria de repuestos
+            para motocicletas, no solo por la calidad de nuestros productos,
+            sino también por nuestra innovación y compromiso con el servicio al
+            cliente. Aspiramos a expandir nuestra oferta y seguir siendo la
+            primera opción para los entusiastas de las motocicletas en todo el
+            país.
+          </p>
+        </div>
+      </section>
+
+      <section class="cont-about">
+        <div class="about-issue">
+          <h1 class="about-title">Nuestros Valores</h1>
+          <ul class="about-list">
+            <li class="about-list-item">
+              <strong>Calidad:</strong> Ofrecemos solo repuestos de las mejores
+              marcas y fabricantes, garantizando durabilidad y rendimiento.
+            </li>
+            <li class="about-list-item">
+              <strong>Integridad:</strong> Mantenemos una relación honesta y
+              transparente con nuestros clientes, proveedores y socios.
+            </li>
+            <li class="about-list-item">
+              <strong>Compromiso:</strong> Nos dedicamos a satisfacer las
+              necesidades de nuestros clientes con un servicio rápido y
+              eficiente.
+            </li>
+            <li class="about-list-item">
+              <strong>Innovación:</strong> Buscamos constantemente nuevas formas
+              de mejorar y expandir nuestro catálogo para satisfacer las
+              demandas del mercado.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cont-about">
+        <div class="about-issue">
+          <h1 class="about-title">Nuestro Equipo</h1>
+          <p class="about-text">
+            En RPM al Límite, contamos con un equipo de profesionales
+            apasionados por las motocicletas y expertos en el sector de
+            repuestos. Nuestro equipo está formado por especialistas en ventas,
+            técnicos y personal de atención al cliente que se dedican a ofrecer
+            una experiencia de compra excepcional. Cada miembro de nuestro
+            equipo tiene un profundo conocimiento de los productos que ofrecemos
+            y está listo para ayudarte a encontrar la pieza adecuada para tu
+            motocicleta.
+          </p>
+        </div>
+      </section>
+
+      <section class="cont-about">
+        <div class="about-issue">
+          <h1 class="about-title">Nuestros Productos</h1>
+          <p class="text-[2rem] font-black">
+            Ofrecemos una extensa gama de repuestos y accesorios para
+            motocicletas, que incluyen:
+          </p>
+          <ul class="about-list">
+            <li class="about-list-item">
+              <strong>Filtros de aceite y aire:</strong> Mantén el motor de tu
+              motocicleta funcionando de manera óptima con nuestros filtros de
+              alta calidad.
+            </li>
+            <li class="about-list-item">
+              <strong>Pastillas de freno:</strong> Garantiza una frenada segura
+              y eficaz con nuestras pastillas de freno duraderas.
+            </li>
+            <li class="about-list-item">
+              <strong>Correas y cadenas de transmisión:</strong> Asegura una
+              transmisión suave y confiable con nuestras correas y cadenas de
+              alto rendimiento.
+            </li>
+            <li class="about-list-item">
+              <strong>Bujías y sistemas de encendido:</strong> Mejora el
+              arranque y el rendimiento del motor con nuestras bujías y sistemas
+              de encendido de última generación.
+            </li>
+            <li class="about-list-item">
+              <strong>Accesorios personalizados:</strong> Encuentra una variedad
+              de accesorios que te permitan personalizar tu motocicleta y darle
+              un toque único.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cont-about">
+        <div class="about-issue">
+          <h1 class="about-title">Cultura y Filosofía</h1>
+          <p class="about-text">
+            La cultura de RPM al Límite se basa en una profunda pasión por las
+            motocicletas y un firme compromiso con la excelencia. Valoramos la
+            honestidad, la profesionalidad y la dedicación en todo lo que
+            hacemos. Creemos que un excelente servicio al cliente es fundamental
+            para nuestro éxito y trabajamos constantemente para superar las
+            expectativas de nuestros clientes. Nuestra filosofía se centra en la
+            mejora continua y en ofrecer un entorno de trabajo positivo y
+            colaborativo para nuestro equipo.
+          </p>
+        </div>
+      </section>
+
+      <div class="particles-cont">
+        <span style="--i: 18"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 22"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 28"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 12"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 26"></span>
+        <span style="--i: 23"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 24"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 28"></span>
+        <span style="--i: 23"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 12"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 26"></span>
+        <span style="--i: 22"></span>
+        <span style="--i: 24"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 28"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 12"></span>
+        <span style="--i: 23"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 26"></span>
+        <span style="--i: 22"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 24"></span>
+      </div>
+    </main>
+    <footer id="contactos" class="w-full bg-[#1E201E] p-5 text-white">
+      <div class="flex justify-center gap-12 items-center">
+        <div
+          class="relative w-1/2 flex flex-col gap-5 justify-center items-center text-white"
+        >
+          <img
+            src="../src/img/logo-blanco.png"
+            alt="logo"
+            class="absolute w-48 left-[10px] top-[-190px]"
+          />
+          <p class="w-3/4 text-2xl text-center py-3">
+            En <strong>RPM al Límite</strong>, estamos listos para ayudarte a
+            mantener tu motocicleta en el mejor estado posible. ¡Contáctanos hoy
+            mismo y descubre cómo podemos servirte!
+          </p>
+          <ul class="flex gap-5 text-4xl">
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="tel:+1234567890" target="_blank">
+                <i class="fas fa-phone"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a
+                class="x flex justify-center items-center w-full h-16 rounded-full"
+                href="https://x.com/tu_usuario"
+                target="_blank"
+              >
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="https://wa.link/tu_enlace" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="https://www.facebook.com/tu_usuario" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="https://www.instagram.com/tu_usuario" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-1/2 flex justify-center items-center">
+          <div
+            class="footer-container flex flex-col justify-center items-center w-3/4"
+          >
+            <h2>Contáctanos</h2>
+            <form id="contactForm" class="contact-form text-black">
+              <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button class="form-button" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="formLogIn"
+      class="form_cont flex justify-center items-center w-full h-screen fixed top-0 bg-black bg-opacity-40 z-[9999] text-white"
+    >
+      <form
+        class="form_login flex flex-col items-center gap-5 w-1/5 h-[450px] py-8 px-4 bg-white rounded"
+      >
+        <h1 class="text-5xl text-black">Inicia Sesion</h1>
+        <div class="w-full items-center flex flex-col">
+          <div class="flex items-center w-full form-control">
+            <label class="label">
+              <span class="label-text">Email</span>
+            </label>
+            <input
+              type="email"
+              placeholder="email"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <label class="label">
+              <span class="label-text">Password</span>
+            </label>
+            <input
+              type="password"
+              placeholder="password"
+              class="w-3/4 input input-bordered"
+              required
+            />
+            <label class="label text-left w-3/4">
+              <a href="#" class="label-text-alt link link-hover"
+                >Forgot password?</a
+              >
+            </label>
+          </div>
+          <div class="flex items-center w-full form-control mt-6">
+            <button id="temporal" class="w-2/6 btn btn-primary">Login</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      id="formLogOut"
+      class="form_cont_logout flex justify-center items-center w-full h-screen fixed top-0 bg-black bg-opacity-40 z-[9999] text-white"
+    >
+      <form
+        class="form_logout flex flex-col items-center gap-4 w-1/5 h-[700px] py-8 px-4 bg-white rounded"
+      >
+        <h1 class="text-5xl text-black">Registrarse</h1>
+        <div class="w-full items-center flex flex-col gap-3">
+          <div class="flex items-center w-full form-control">
+            <input
+              type="email"
+              placeholder="email"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="text"
+              placeholder="name"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="text"
+              placeholder="last-name"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="text"
+              placeholder="addres"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex flex-row justify-center w-full form-control">
+            <select class="select select-secondary px-5">
+              <option disabled selected>+..</option>
+              <option>+57</option>
+              <option>+52</option>
+              <option>+53</option>
+              <option>+54</option>
+              <option>+45</option>
+              <option>+64</option>
+              <option>+52</option>
+              <option>+61</option>
+            </select>
+            <input
+              type="number"
+              placeholder="phone number"
+              class="w-3/5 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="password"
+              placeholder="password"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="password"
+              placeholder="repeat password"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex">
+            <input type="checkbox" checked="checked" class="checkbox" />Al
+            <p class="text-black text-left">
+              AL registrarte en nuestro sitio web, aceptas cumplir con los
+              Términos y Condiciones establecidos.
+            </p>
+          </div>
+          <div class="flex items-center w-full form-control mt-6">
+            <button id="temporalOut" class="w-2/6 btn btn-primary">
+              Login
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="../src/js/about.js"></script>
+  </body>
+</html>

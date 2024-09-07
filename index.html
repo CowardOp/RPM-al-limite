@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/img/logo-repuestos.png" />
+    <title>RPM al limite</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+  </head>
+  <body>
+    <header class="w-full">
+      <nav
+        class="top-0 flex w-full items-center gap-5 py-2 ps-3 bg-[#1E201E] text-white"
+      >
+        <a href="#banner"
+          ><img
+            class="w-12"
+            src="./src/img/logo-repuestos.png"
+            alt="logo_empresa"
+        /></a>
+        <ul class="flex w-3/4 gap-4">
+          <li><a href="#banner">Inicio</a></li>
+          <li><a href="./public/About.html">Sobre nosotros</a></li>
+          <li class="relative">
+            <button
+              id="productButton"
+              class="menu-button flex gap-3 items-center"
+            >
+              Productos
+              <i id="menuIcon" class="menu-icon fa-regular fa-down-to-line"></i>
+            </button>
+            <div id="productMenu" class="product-menu ps-1 bg-[#1E201E]">
+              <ul class="flex flex-col gap-2 py-1 divide-y divide-white">
+                <li class="item pt-1">
+                  <a href="./public/products.html#motor"
+                    >Motor y Transmisión <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./public/products.html#frenos"
+                    >Sistema de Frenos <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./public/products.html#suspension"
+                    >Suspensión y Dirección
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./public/products.html#combustible"
+                    >Sistema de Combustible
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./public/products.html#electrico"
+                    >Sistema Eléctrico <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./public/products.html#escape"
+                    >Sistema de Escape <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./public/products.html#carroseria"
+                    >Carrocería y Accesorios
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="./public/products.html#herramientas"
+                    >Herramientas y Mantenimiento
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item py-1 flex items-center">
+                  <a href="./public/products.html#ropa"
+                    >Ropa y Equipos de Protección
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#contactos">Contactos</a></li>
+          <li class="ms-5">
+            <a href=""
+              ><i class="shop fa-duotone fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="flex absolute gap-3 right-0 w-1/5 pe-4">
+          <button id="logIn" class="btn btn-sm btn-primary w-2/5">
+            Iniciar Sesion
+          </button>
+          <button id="logOut" class="btn btn-sm btn-primary w-2/5">
+            Registrarse
+          </button>
+          <button class="w-8">
+            <i class="fa-solid fa-right-to-bracket"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="text-black">
+      <section>
+        <!-- banner -->
+        <div id="banner" class="banner">
+          <img src="./src/img/motorcicle.jpg" alt="moto" class="" />
+          <h1 class="">
+            "Encuentra los mejores repuestos <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;tu motocicleta en RPM al Límite"
+          </h1>
+
+          <div class="btn_cont">
+            <button class="w-10px bg-[#76abae] py-1 px-3 rounded">
+              <a href="#contProducts">Conoce Más</a>
+            </button>
+            <button class="w-10px bg-[#76abae] py-1 px-3 rounded">
+              <a href="#offers">Ofertas</a>
+            </button>
+          </div>
+        </div>
+        <!-- about -->
+        <div
+          class="w-full h-[50vh] flex flex-col gap-5 justify-center items-center bg-[#36C2CE]"
+        >
+          <h1 class="text-5xl">Sobre Nosotros</h1>
+          <p class="text-2xl text-center w-1/2">
+            En RPM al Límite, nos dedicamos a ofrecer repuestos de alta calidad
+            para motocicletas de todas las marcas. Con años de experiencia en el
+            sector, nuestro compromiso es brindar a nuestros clientes los
+            mejores productos y un servicio excepcional
+          </p>
+          <a
+            class="bg-[#77E4C8] px-3 py-1 text-2xl rounded shadow-xl hover:scale-110 hover:shadow-2xl duration-300"
+            href="./public/About.html"
+            >Saber Más</a
+          >
+        </div>
+        <!-- poductos -->
+        <div
+          id="contProducts"
+          class="cont-products w-full h-screen flex items-center justify-center"
+        >
+          <div id="products" class="products">
+            <div class="products-item">
+              <h1 class="products-header">Motor y Transmisión</h1>
+              <div class="products-content">
+                <ul>
+                  <li>Filtros de aceite</li>
+                  <li>Filtros de aire</li>
+                  <li>Bujías</li>
+                  <li>Correas de transmisión</li>
+                  <li>Cadenas de transmisión</li>
+                  <li>Juntas y sellos</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item">
+              <h1 class="products-header">Sistema de Frenos</h1>
+              <div class="products-content">
+                <ul>
+                  <li>Pastillas de freno</li>
+                  <li>Discos de freno</li>
+                  <li>Bombas de freno</li>
+                  <li>Latiguillos de freno</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item">
+              <h1 class="products-header">Suspensión y Dirección</h1>
+              <div class="products-content">
+                <ul>
+                  <li>Amortiguadores</li>
+                  <li>Horquillas</li>
+                  <li>Rodamientos de dirección</li>
+                  <li>Muelles</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item">
+              <h1 class="products-header">Sistema de Combustible</h1>
+              <div class="products-content">
+                <ul>
+                  <li>Bombas de combustible</li>
+                  <li>Inyectores</li>
+                  <li>Filtros de combustible</li>
+                  <li>Carburadores</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item">
+              <h1 class="products-header">Sistema Eléctrico</h1>
+              <div class="products-content">
+                <ul>
+                  <li>Baterías</li>
+                  <li>Altavoces</li>
+                  <li>Luces y faros</li>
+                  <li>Interruptores y relés</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item">
+              <h1 class="products-header">Sistema de Escape</h1>
+              <div class="products-content">
+                <ul>
+                  <li>Silenciadores</li>
+                  <li>Colectores de escape</li>
+                  <li>Tuberías de escape</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item">
+              <h1 class="products-header">Carrocería y Accesorios</h1>
+              <div class="products-content">
+                <ul>
+                  <li>Cubiertas y paneles</li>
+                  <li>Espejos</li>
+                  <li>Manillares y puños</li>
+                  <li>Asientos y cojines</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item">
+              <h1 class="products-header">Herramientas y Mantenimiento</h1>
+              <div class="products-content">
+                <ul>
+                  <li>Kits de herramientas</li>
+                  <li>Lubricantes y aceites</li>
+                  <li>Equipos de limpieza</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item">
+              <h1 class="products-header">Ropa y Equipos de Protección</h1>
+              <div class="products-content">
+                <ul>
+                  <li>Cascos</li>
+                  <li>Guantes</li>
+                  <li>Chaquetas y pantalones</li>
+                  <li>Protecciones</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- offers -->
+        <div
+          id="offers"
+          class="flex justify-center items-center cont-offers w-full h-screen"
+        >
+          <div class="discount h-[800px]">
+            <button class="prev btn-offer">
+              <i class="fa-regular fa-chevron-left"></i>
+            </button>
+            <div class="discount-images">
+              <div class="discount-item">
+                <img
+                  src="./src/img/repuestos.jpg"
+                  alt="Descuento de Temporada"
+                />
+                <div class="offer-details">
+                  <div
+                    class="text-shadow-solid absolute w-2/4 top-[45%] left-[10%] bg-[#f9e40055]"
+                  >
+                    <h2 class="text-3xl font-semibold">
+                      Descuento de Temporada
+                    </h2>
+                    <p class="font-semibold">
+                      ¡Aprovecha nuestro Descuento de Temporada! Obtén un 15% de
+                      descuento en toda nuestra gama de repuestos para
+                      motocicletas.
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong class="text-2xl">Porcentaje de Descuento:</strong>
+                      15%
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong class="text-2xl">Descuento :</strong>
+                      COP $30,000
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong class="text-2xl">Precio con Descuento:</strong>
+                      COP $170,000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="discount-item">
+                <img src="./src/img/filtros.jpg" alt="Filtros de Aceite" />
+                <div class="offer-details">
+                  <div
+                    class="text-shadow-solid absolute w-2/4 top-[45%] right-[10%] bg-[#5C2FC255] text-white"
+                  >
+                    <h2 class="text-3xl font-semibold">
+                      Oferta en Filtros de Aceite
+                    </h2>
+                    <p class="font-semibold">
+                      Compra 3 filtros de aceite y recibe un 20% de descuento en
+                      la compra total.
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong class="text-2xl">Porcentaje de Descuento:</strong>
+                      20%
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong class="text-2xl">Descuento :</strong>
+                      COP $30,000
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong class="text-2xl">Precio con Descuento:</strong>
+                      COP $120,000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="discount-item">
+                <img src="./src/img/frenos.jpg" alt="Pastillas de Freno" />
+                <div class="offer-details">
+                  <div
+                    class="text-shadow-solid absolute w-2/4 top-[25%] right-[10%] bg-[#06D00155]"
+                  >
+                    <h2 class="text-3xl font-semibold">
+                      Promoción en Pastillas de Freno
+                    </h2>
+                    <p class="font-semibold">
+                      ¡Descuento del 10% en todas las pastillas de freno! Mantén
+                      tu seguridad al máximo.
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong class="text-2xl">Porcentaje de Descuento:</strong>
+                      10%
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong class="text-2xl">Descuento :</strong>
+                      COP $10,000
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong class="text-2xl">Precio con Descuento:</strong>
+                      COP $90,000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="discount-item">
+                <img
+                  src="./src/img/accesorios.jpg"
+                  alt="Accesorios de Carrocería"
+                />
+                <div class="offer-details">
+                  <div
+                    class="text-shadow-solid absolute w-2/4 bot-[25%] right-[10%] bg-[#C40C0C55]"
+                  >
+                    <h2 class="text-3xl font-semibold">Oferta de Fin de Año</h2>
+                    <p class="font-semibold">
+                      Celebra el fin de año con un 25% de descuento en todos los
+                      accesorios de carrocería.
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong>Porcentaje de Descuento:</strong> 25%
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong class="text-2xl">Descuento :</strong>
+                      COP $20,000
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong class="text-2xl">Precio con Descuento:</strong>
+                      COP $60,000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="discount-item w-full h-screen">
+                <img src="./src/img/bateria.jpg" alt="Baterías" />
+                <div class="offer-details">
+                  <div
+                    class="text-shadow-solid absolute w-2/4 top-[15%] right-[10%] bg-[#7F27FF55]"
+                  >
+                    <h2 class="text-3xl font-semibold">Oferta en Baterías</h2>
+                    <p class="font-semibold">
+                      Compra una batería y recibe un 10% de descuento en la
+                      segunda batería.
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong>Porcentaje de Descuento:</strong> 10% en la
+                      segunda unidad
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong>Descuento :</strong> COP $15,000
+                    </p>
+                    <p class="text-4xl font-black">
+                      <strong>Precio con Descuento:</strong> COP $135,000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="next btn-offer">
+              <i class="fa-regular fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <!-- noticias -->
+        <div
+          class="w-full h-screen flex flex-col gap-5 justify-center items-center"
+        >
+          <h1
+            class="text-5xl font-bold border-b-4 border-b border-b-black text-white"
+          >
+            Noticias y Artículos
+          </h1>
+          <div class="w-full flex flex-wrap items-cneter justify-center gap-5">
+            <div class="notice">
+              <h1 class="notice-title">
+                "Cómo mantener tu motocicleta en perfecto estado durante el
+                invierno"
+              </h1>
+              <p class="notice-text">
+                El invierno puede ser un desafío para los motociclistas, pero
+                con los cuidados adecuados, tu moto puede mantenerse en óptimas
+                condiciones. En este artículo, te ofrecemos consejos esenciales
+                para proteger tu motocicleta del frío, la humedad y la sal en
+                las carreteras. Desde la elección del aceite correcto hasta la
+                importancia de una buena cubierta, descubre todo lo que
+                necesitas saber para mantener tu moto lista para la primavera.
+              </p>
+              <a href="#">Leer Más</a>
+            </div>
+
+            <div class="notice">
+              <h1 class="notice-title">
+                "Las mejores actualizaciones para tu moto en 2024"
+              </h1>
+              <p class="notice-text">
+                El año 2024 trae consigo emocionantes novedades en el mundo de
+                las motocicletas. Desde sistemas de escape más eficientes hasta
+                tecnología avanzada en frenos y suspensión, te presentamos las
+                mejores actualizaciones que puedes hacer a tu moto este año. No
+                te pierdas nuestras recomendaciones sobre los accesorios
+                imprescindibles y las mejoras de rendimiento que te ayudarán a
+                llevar tu experiencia de conducción al siguiente nivel.
+              </p>
+              <a href="#">Leer Más</a>
+            </div>
+
+            <div class="notice">
+              <h1 class="notice-title">
+                "Guía de mantenimiento básico: Lo que todo motociclista debe
+                saber"
+              </h1>
+              <p class="notice-text">
+                Mantener tu moto en buen estado no tiene que ser complicado.
+                Esta guía de mantenimiento básico te muestra los pasos sencillos
+                que puedes seguir para asegurarte de que tu motocicleta esté
+                siempre en óptimas condiciones. Desde cómo revisar el nivel de
+                aceite hasta cómo cuidar la cadena, aprende lo esencial para
+                prolongar la vida útil de tu moto.
+              </p>
+              <a href="#">Leer Más</a>
+            </div>
+
+            <div class="notice">
+              <h1 class="notice-title">
+                "Accesorios imprescindibles para viajes largos en moto"
+              </h1>
+              <p class="notice-text">
+                Planificar un viaje largo en motocicleta requiere más que solo
+                el mapa correcto. En este artículo, exploramos los accesorios
+                que no pueden faltar en tu moto antes de emprender un viaje
+                largo. Desde alforjas hasta sistemas GPS, descubre cómo equipar
+                tu moto para garantizar una experiencia de viaje cómoda y
+                segura.
+              </p>
+              <a href="#">Leer Más</a>
+            </div>
+
+            <div class="notice">
+              <h1 class="notice-title">
+                "Tendencias en motos eléctricas: ¿Es hora de hacer el cambio?"
+              </h1>
+              <p class="notice-text">
+                Las motos eléctricas están ganando popularidad, pero ¿es el
+                momento adecuado para cambiar? En este artículo, analizamos las
+                tendencias actuales en motocicletas eléctricas, comparando sus
+                beneficios y desventajas frente a las motos tradicionales.
+                Descubre si la tecnología, la autonomía y el ahorro en
+                combustible hacen que una moto eléctrica sea la mejor opción
+                para ti.
+              </p>
+              <a href="#">Leer Más</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contactos" class="w-full bg-[#1E201E] p-5">
+      <div class="flex justify-center gap-12 items-center">
+        <div
+          class="relative w-1/2 flex flex-col gap-5 justify-center items-center text-white"
+        >
+          <img
+            src="../src/img/logo-blanco.png"
+            alt="logo"
+            class="absolute w-48 left-[10px] top-[-190px]"
+          />
+          <p class="w-3/4 text-2xl text-center py-3 select-none">
+            En <strong>RPM al Límite</strong>, estamos listos para ayudarte a
+            mantener tu motocicleta en el mejor estado posible. ¡Contáctanos hoy
+            mismo y descubre cómo podemos servirte!
+          </p>
+          <ul class="flex gap-5 text-4xl">
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="tel:+1234567890" target="_blank">
+                <i class="fas fa-phone"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a
+                class="x flex justify-center items-center w-full h-16 rounded-full"
+                href="https://x.com/tu_usuario"
+                target="_blank"
+              >
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="https://wa.link/tu_enlace" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="https://www.facebook.com/tu_usuario" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="https://www.instagram.com/tu_usuario" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-1/2 flex justify-center items-center">
+          <div
+            class="footer-container flex flex-col justify-center items-center w-3/4"
+          >
+            <h2>Contáctanos</h2>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button class="form-button" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="formLogIn"
+      class="form_cont flex justify-center items-center w-full h-screen fixed top-0 bg-black bg-opacity-40 z-[9999] text-white"
+    >
+      <form
+        class="form_login flex flex-col items-center gap-5 w-1/5 h-[450px] py-8 px-4 bg-white rounded"
+      >
+        <h1 class="text-5xl text-black">Inicia Sesion</h1>
+        <div class="w-full items-center flex flex-col">
+          <div class="flex items-center w-full form-control">
+            <label class="label">
+              <span class="label-text">Email</span>
+            </label>
+            <input
+              type="email"
+              placeholder="email"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <label class="label">
+              <span class="label-text">Password</span>
+            </label>
+            <input
+              type="password"
+              placeholder="password"
+              class="w-3/4 input input-bordered"
+              required
+            />
+            <label class="label text-left w-3/4">
+              <a href="#" class="label-text-alt link link-hover"
+                >Forgot password?</a
+              >
+            </label>
+          </div>
+          <div class="flex items-center w-full form-control mt-6">
+            <button id="temporal" class="w-2/6 btn btn-primary">Login</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      id="formLogOut"
+      class="form_cont_logout flex justify-center items-center w-full h-screen fixed top-0 bg-black bg-opacity-40 z-[9999] text-white"
+    >
+      <form
+        class="form_logout flex flex-col items-center gap-4 w-1/5 h-[700px] py-8 px-4 bg-white rounded"
+      >
+        <h1 class="text-5xl text-black">Registrarse</h1>
+        <div class="w-full items-center flex flex-col gap-3">
+          <div class="flex items-center w-full form-control">
+            <input
+              type="email"
+              placeholder="email"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="text"
+              placeholder="name"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="text"
+              placeholder="last-name"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="text"
+              placeholder="addres"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex flex-row justify-center w-full form-control">
+            <select class="select select-secondary px-5">
+              <option disabled selected>+..</option>
+              <option>+57</option>
+              <option>+52</option>
+              <option>+53</option>
+              <option>+54</option>
+              <option>+45</option>
+              <option>+64</option>
+              <option>+52</option>
+              <option>+61</option>
+            </select>
+            <input
+              type="number"
+              placeholder="phone number"
+              class="w-3/5 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="password"
+              placeholder="password"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="password"
+              placeholder="repeat password"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex">
+            <input type="checkbox" checked="checked" class="checkbox" />Al
+            <p class="text-black text-left">
+              AL registrarte en nuestro sitio web, aceptas cumplir con los
+              Términos y Condiciones establecidos.
+            </p>
+          </div>
+          <div class="flex items-center w-full form-control mt-6">
+            <button id="temporalOut" class="w-2/6 btn btn-primary">
+              Login
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

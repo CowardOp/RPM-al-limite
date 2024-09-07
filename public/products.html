@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../src/img/logo-repuestos.png" />
+    <title>Articulos</title>
+    <link rel="stylesheet" href="../src/css/main.css" />
+    <link rel="stylesheet" href="../src/css/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+  </head>
+  <body>
+    <header class="w-full">
+      <nav
+        id="nav"
+        class="flex items-center gap-5 py-2 ps-3 bg-[#1E201E] text-white"
+      >
+        <a href="#motor"
+          ><img
+            class="w-12"
+            src="../src/img/logo-repuestos.png"
+            alt="logo_empresa"
+        /></a>
+        <ul class="flex w-3/4 gap-4">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./About.html">Sobre nosotros</a></li>
+          <li class="relative">
+            <button
+              id="productButton"
+              class="menu-button flex gap-3 items-center"
+            >
+              Productos
+              <i id="menuIcon" class="menu-icon fa-regular fa-down-to-line"></i>
+            </button>
+            <div id="productMenu" class="product-menu ps-1 bg-[#1E201E]">
+              <ul class="flex flex-col gap-2 py-1 divide-y divide-white">
+                <li class="item pt-1">
+                  <a href="#motor"
+                    >Motor y Transmisión <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="#frenos"
+                    >Sistema de Frenos <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="#suspension"
+                    >Suspensión y Dirección
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="#combustible"
+                    >Sistema de Combustible
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="#electrico"
+                    >Sistema Eléctrico <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="#escape"
+                    >Sistema de Escape <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="#carroseria"
+                    >Carrocería y Accesorios
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item pt-1.5 flex items-center">
+                  <a href="#herramientas"
+                    >Herramientas y Mantenimiento
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+                <li class="item py-1 flex items-center">
+                  <a href="#ropa"
+                    >Ropa y Equipos de Protección
+                    <i class="fa-thin fa-angle-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#contactos">Contactos</a></li>
+          <li class="ms-5">
+            <a href=""
+              ><i class="shop fa-duotone fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="flex absolute gap-3 right-0 w-1/5 pe-4">
+          <button id="logIn" class="btn btn-sm btn-primary w-2/5">
+            Iniciar Sesion
+          </button>
+          <button id="logOut" class="btn btn-sm btn-primary w-2/5">
+            Registrarse
+          </button>
+          <button class="w-8">
+            <i class="fa-solid fa-right-to-bracket"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="divide-y-8 divide-black">
+      <section id="motor" class="bg-[#F7EED3]">
+        <div class="products">
+          <h2>Motor y Transmisión</h2>
+          <div class="cont-product">
+            <ul class="product">
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://http2.mlstatic.com/D_NQ_NP_931458-MCO78048617812_082024-O.webp"
+                    alt="Filtro de aceite"
+                  />
+                  <h3>Filtros de aceite</h3>
+                  <span class="card-title">Referencia: FO1234</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxedSyzgEPxdNRJ0Yy0r9CpXmXko29y62Xdw&s"
+                    alt="Filtro de aire"
+                  />
+                  <h3>Filtros de aire</h3>
+                  <span class="card-title">Referencia: FA5678</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUT8fpyiGhHf1AotyH-Klurxx06aGWfJOWYg&s"
+                    alt="Bujías"
+                  />
+                  <h3>Bujías</h3>
+                  <span class="card-title">Referencia: BU9101</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsWmpENepVObnlHy75dR4aRfR0wJOqQMF9pw&s"
+                    alt="Cadenas de transmisión"
+                  />
+                  <h3>Cadenas de transmisión</h3>
+                  <span class="card-title">Referencia: CD3344</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAA4hbI5d9zMZ9b_sB_8MqjATo8j50D6KnMw&s"
+                    alt="Juntas y sellos"
+                  />
+                  <h3>Juntas y sellos</h3>
+                  <span class="card-title">Referencia: JS5566</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="frenos" class="bg-[#A1D6B2]">
+        <div class="products">
+          <h2>Sistema de Frenos</h2>
+          <div class="cont-product">
+            <ul class="product">
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://www.motopartes.com.co/4204-home_default/bws-125-fi-pastillas-de-freno-vitrix.jpg"
+                    alt="Pastillas de freno"
+                  />
+                  <h3>Pastillas de freno</h3>
+                  <span class="card-title">Referencia: PF1234</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://www.motopartes.com.co/3231-large_default/jc100-jc110-disco-de-freno-delantero.jpg"
+                    alt="Discos de freno"
+                  />
+                  <h3>Discos de freno</h3>
+                  <span class="card-title">Referencia: DF5678</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbuet4UaX6mWYdRpzIktAI3LnZapunNpxuOw&s"
+                    alt="Bombas de freno"
+                  />
+                  <h3>Bombas de freno</h3>
+                  <span class="card-title">Referencia: BF9101</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://http2.mlstatic.com/D_NQ_NP_643209-MCO70776922709_072023-O.webp"
+                    alt="Latiguillos de freno"
+                  />
+                  <h3>Latiguillos de freno</h3>
+                  <span class="card-title">Referencia: LF1122</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://yamaha.vtexassets.com/arquivos/ids/179548-800-auto?v=638316274058000000&width=800&height=auto&aspect=true"
+                    alt="Aceite de freno"
+                  />
+                  <h3>Aceite de freno</h3>
+                  <span class="card-title">Referencia: AF3344</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="suspension" class="bg-[#F7EED3]">
+        <div class="products">
+          <h2>Suspensión y Dirección</h2>
+          <div class="cont-product">
+            <ul class="product">
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSz0ehpcgjnGmpz9juOfRe6p4yV6jYcTu-QQ&s"
+                    alt="Amortiguadores"
+                  />
+                  <h3>Amortiguadores</h3>
+                  <span class="card-title">Referencia: AM1234</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://i.pinimg.com/236x/f2/a4/2e/f2a42e4adafb223f224be0d758a7cc9a.jpg"
+                    alt="Horquillas"
+                  />
+                  <h3>Horquillas</h3>
+                  <span class="card-title">Referencia: HO5678</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKU2wihTeZ5zqklNlcb5sxviqwfL37yhBFwA&s"
+                    alt="Rodamientos de dirección"
+                  />
+                  <h3>Rodamientos de dirección</h3>
+                  <span class="card-title">Referencia: RD9101</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShJc8mAGMF6tee4e0Bx8M9YoDyquCI-zS_3Q&s"
+                    alt="Muelles"
+                  />
+                  <h3>Muelles</h3>
+                  <span class="card-title">Referencia: MU1122</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://http2.mlstatic.com/D_NQ_NP_935379-MCO71634379572_092023-O.webp"
+                    alt="Amortiguadores Sport"
+                  />
+                  <h3>Amortiguadores Sport</h3>
+                  <span class="card-title">Referencia: AM-SP4567</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="combustible" class="bg-[#A1D6B2]">
+        <div class="products">
+          <h2>Sistema de Combustible</h2>
+          <div class="cont-product">
+            <ul class="product">
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/511A1NsDjrS.jpg"
+                    alt="Bombas de combustible"
+                  />
+                  <h3>Bombas de combustible</h3>
+                  <span class="card-title">Referencia: BC1234</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlF2R251uHJnvcKDfIhkvCNDsMf7KmNUr9ZA&s"
+                    alt="Inyectores"
+                  />
+                  <h3>Inyectores</h3>
+                  <span class="card-title">Referencia: IN5678</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRseI5bSZSHDW3uuqEfLY_zspXeWGXkxjf6Dw&s"
+                    alt="Filtros de combustible"
+                  />
+                  <h3>Filtros de combustible</h3>
+                  <span class="card-title">Referencia: FC9101</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTetZFadncpUFXIDxc45pMA7qYdtbK-enrk7g&s"
+                    alt="Carburadores"
+                  />
+                  <h3>Carburadores</h3>
+                  <span class="card-title">Referencia: CA1122</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://motosgenio.com/tienda/wp-content/uploads/2021/10/BOMBAS-DE-ACEITE-09320087.png"
+                    alt="Bombas de alto rendimiento"
+                  />
+                  <h3>Bombas de alto rendimiento</h3>
+                  <span class="card-title">Referencia: BPR3344</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="electrico" class="bg-[#F7EED3]">
+        <div class="products">
+          <h2>Sistema Eléctrico</h2>
+          <div class="cont-product">
+            <ul class="product">
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://manuelchavez.co/wp-content/uploads/2021/07/bateria-megaba-mtx5l-ms-2.jpg"
+                    alt="Baterías"
+                  />
+                  <h3>Baterías</h3>
+                  <span class="card-title">Referencia: BA1234</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://http2.mlstatic.com/D_NQ_NP_980635-MLU73747057970_012024-O.webp"
+                    alt="Altavoces"
+                  />
+                  <h3>Altavoces</h3>
+                  <span class="card-title">Referencia: AL5678</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://down-co.img.susercontent.com/file/72814d93d0108b548fd2299665c4accd"
+                    alt="Luces y faros"
+                  />
+                  <h3>Luces y faros</h3>
+                  <span class="card-title">Referencia: LF9101</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIkiUyYyjFLzGTRomQ-FVBnqEbpcb5mU6GNA&s"
+                    alt="Interruptores y relés"
+                  />
+                  <h3>Interruptores y relés</h3>
+                  <span class="card-title">Referencia: IR1122</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://www.cascosylujos.com/cmsw/wp-content/uploads/2021/12/AZ1500-600x600-1.jpg"
+                    alt="Relés"
+                  />
+                  <h3>Relés</h3>
+                  <span class="card-title">Referencia: RE3344</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="escape" class="bg-[#A1D6B2]">
+        <div class="products">
+          <h2>Sistema de Escape</h2>
+          <div class="cont-product">
+            <ul class="product">
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://i.ebayimg.com/thumbs/images/g/OoYAAOSwSSFkm5yS/s-l640.jpg"
+                    alt="Silenciador"
+                  />
+                  <h3>Silenciadores</h3>
+                  <span class="card-title">Referencia: SI5678</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://www.motorecambiosvferrer.es/img/cms/blog/escape-yasuni-tub810.jpg"
+                    alt="Colectores de escape"
+                  />
+                  <h3>Colectores de escape</h3>
+                  <span class="card-title">Referencia: CE9101</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://http2.mlstatic.com/D_NQ_NP_809261-CBT75302502106_032024-O.webp"
+                    alt="Tuberías de escape"
+                  />
+                  <h3>Tuberías de escape</h3>
+                  <span class="card-title">Referencia: TE1122</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANdJjq4OrWBUk-eOPl3cNA-IbXNb236hgaA&s"
+                    alt="Silenciador deportivo"
+                  />
+                  <h3>Silenciador deportivo</h3>
+                  <span class="card-title">Referencia: SD3344</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/51x3Bok7DuL.jpg"
+                    alt="Silenciador de competición"
+                  />
+                  <h3>Silenciador de competición</h3>
+                  <span class="card-title">Referencia: SC5566</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="carroseria" class="bg-[#F7EED3]">
+        <div class="products">
+          <h2>Carrocería y Accesorios</h2>
+          <div class="cont-product">
+            <ul class="product">
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://ae-pic-a1.aliexpress-media.com/kf/He0a356f9d271443cbd9e0b8482bf73f3H.jpg_640x640Q90.jpg_.webp"
+                    alt="Cubiertas y paneles"
+                  />
+                  <h3>Cubiertas y paneles</h3>
+                  <span class="card-title">Referencia: CP1234</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://http2.mlstatic.com/D_NQ_NP_926526-MCO51544622973_092022-O.webp"
+                    alt="Espejos"
+                  />
+                  <h3>Espejos</h3>
+                  <span class="card-title">Referencia: ES5678</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://mercleta.com/wp-content/uploads/2021/11/D_NQ_NP_793107-MCO32031053672_082019-O-1024x1024.webp"
+                    alt="Manillares y puños"
+                  />
+                  <h3>Manillares y puños</h3>
+                  <span class="card-title">Referencia: MP9101</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_2X_738268-MCO72599166611_102023-T.webp"
+                    alt="Asientos y cojines"
+                  />
+                  <h3>Asientos y cojines</h3>
+                  <span class="card-title">Referencia: AC1122</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://down-co.img.susercontent.com/file/7af1e516b7c2b6c14fc7164785a80456"
+                    alt="Guardabarros"
+                  />
+                  <h3>Guardabarros</h3>
+                  <span class="card-title">Referencia: GB3344</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="herramientas" class="bg-[#A1D6B2]">
+        <div class="products">
+          <h2>Herramientas y Mantenimiento</h2>
+          <div class="cont-product">
+            <ul class="product">
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://enmoto.co/cdn/shop/products/RTB2_1000.jpg?v=1606400551"
+                    alt="Kits de herramientas"
+                  />
+                  <h3>Kits de herramientas</h3>
+                  <span class="card-title">Referencia: KH1234</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://www.corbeta.com.co/media/catalog/product/0/7/079191217672.jpg"
+                    alt="Lubricantes y aceites"
+                  />
+                  <h3>Lubricantes y aceites</h3>
+                  <span class="card-title">Referencia: LA5678</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://vilarinoracingshop.com/cdn/shop/products/kit-limpieza-moto-qm-cleaner-ok_600x.jpg?v=1631186678"
+                    alt="Equipos de limpieza"
+                  />
+                  <h3>Equipos de limpieza</h3>
+                  <span class="card-title">Referencia: EL9101</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_2X_891413-MCO77780471134_072024-E.webp"
+                    alt="Sets de herramientas"
+                  />
+                  <h3>Sets de herramientas</h3>
+                  <span class="card-title">Referencia: SH1122</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/123196641_01/w=1500,h=1500,fit=pad"
+                    alt="Kit de mantenimiento"
+                  />
+                  <h3>Kit de mantenimiento</h3>
+                  <span class="card-title">Referencia: KM3344</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="ropa" class="bg-[#F7EED3]">
+        <div class="products">
+          <h2>Ropa y Equipos de Protección</h2>
+          <div class="cont-product">
+            <ul class="product">
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://exitocol.vtexassets.com/arquivos/ids/18629235/Casco-Para-Moto-X-SPORTS-HELMETS-V151-3360583_e.jpg?v=638213619199670000"
+                    alt="Cascos"
+                  />
+                  <h3>Cascos</h3>
+                  <span class="card-title">Referencia: CA1234</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqHxvvZEmYqnEXrSw4Gujs0x7aMozbEYfb_Q&s"
+                    alt="Guantes"
+                  />
+                  <h3>Guantes</h3>
+                  <span class="card-title">Referencia: GU5678</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_2X_886085-CBT75772897582_042024-T.webp"
+                    alt="Chaquetas y pantalones"
+                  />
+                  <h3>Chaquetas y pantalones</h3>
+                  <span class="card-title">Referencia: CP9101</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5WYdgFj-OCnW7_MNjL08NM_BZZ4jOkFSdlg&s"
+                    alt="Protecciones"
+                  />
+                  <h3>Protecciones</h3>
+                  <span class="card-title">Referencia: PR1122</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-product-item">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8q0qFWvd4h9Y0ZHKPtIoqx42XyuqBjadGuA&s"
+                    alt="Chaquetas de moto"
+                  />
+                  <h3>Chaquetas de moto</h3>
+                  <span class="card-title">Referencia: CM3344</span>
+                  <div class="controls">
+                    <button class="rest fa-solid fa-minus"></button>
+                    <span class="count">0</span>
+                    <button class="add fa-solid fa-plus"></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contactos" class="w-full bg-[#1E201E] p-5">
+      <div class="flex justify-center gap-12 items-center">
+        <div
+          class="relative w-1/2 flex flex-col gap-5 justify-center items-center text-white"
+        >
+          <img
+            src="../src/img/logo-blanco.png"
+            alt="logo"
+            class="absolute w-48 left-[10px] top-[-190px]"
+          />
+          <p class="w-3/4 text-2xl text-center py-3">
+            En <strong>RPM al Límite</strong>, estamos listos para ayudarte a
+            mantener tu motocicleta en el mejor estado posible. ¡Contáctanos hoy
+            mismo y descubre cómo podemos servirte!
+          </p>
+          <ul class="flex gap-5 text-4xl">
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="tel:1234567890" target="_blank">
+                <i class="fas fa-phone"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a
+                class="x flex justify-center items-center w-full h-16 rounded-full"
+                href="https://x.com/tu_usuario"
+                target="_blank"
+              >
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="https://wa.link/tu_enlace" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="https://www.facebook.com/tu_usuario" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li
+              class="links flex justify-center items-center border boder-withe rounded-full w-16 h-16"
+            >
+              <a href="https://www.instagram.com/tu_usuario" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-1/2 flex justify-center items-center">
+          <div
+            class="footer-container flex flex-col justify-center items-center w-3/4"
+          >
+            <h2>Contáctanos</h2>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button class="form-button" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="formLogIn"
+      class="form_cont flex justify-center items-center w-full h-screen fixed top-0 bg-black bg-opacity-40 z-[9999] text-white"
+    >
+      <form
+        class="form_login flex flex-col items-center gap-5 w-1/5 h-[450px] py-8 px-4 bg-white rounded"
+      >
+        <h1 class="text-5xl text-black">Inicia Sesion</h1>
+        <div class="w-full items-center flex flex-col">
+          <div class="flex items-center w-full form-control">
+            <label class="label">
+              <span class="label-text">Email</span>
+            </label>
+            <input
+              type="email"
+              placeholder="email"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <label class="label">
+              <span class="label-text">Password</span>
+            </label>
+            <input
+              type="password"
+              placeholder="password"
+              class="w-3/4 input input-bordered"
+              required
+            />
+            <label class="label text-left w-3/4">
+              <a href="#" class="label-text-alt link link-hover"
+                >Forgot password?</a
+              >
+            </label>
+          </div>
+          <div class="flex items-center w-full form-control mt-6">
+            <button id="temporal" class="w-2/6 btn btn-primary">Login</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      id="formLogOut"
+      class="form_cont_logout flex justify-center items-center w-full h-screen fixed top-0 bg-black bg-opacity-40 z-[9999] text-white"
+    >
+      <form
+        class="form_logout flex flex-col items-center gap-4 w-1/5 h-[700px] py-8 px-4 bg-white rounded"
+      >
+        <h1 class="text-5xl text-black">Registrarse</h1>
+        <div class="w-full items-center flex flex-col gap-3">
+          <div class="flex items-center w-full form-control">
+            <input
+              type="email"
+              placeholder="email"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="text"
+              placeholder="name"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="text"
+              placeholder="last-name"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="text"
+              placeholder="addres"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex flex-row justify-center w-full form-control">
+            <select class="select select-secondary px-5">
+              <option disabled selected>+..</option>
+              <option>+57</option>
+              <option>+52</option>
+              <option>+53</option>
+              <option>+54</option>
+              <option>+45</option>
+              <option>+64</option>
+              <option>+52</option>
+              <option>+61</option>
+            </select>
+            <input
+              type="number"
+              placeholder="phone number"
+              class="w-3/5 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="password"
+              placeholder="password"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex items-center w-full form-control">
+            <input
+              type="password"
+              placeholder="repeat password"
+              class="w-3/4 input input-bordered"
+              required
+            />
+          </div>
+          <div class="flex">
+            <input type="checkbox" checked="checked" class="checkbox" />Al
+            <p class="text-black text-left">
+              AL registrarte en nuestro sitio web, aceptas cumplir con los
+              Términos y Condiciones establecidos.
+            </p>
+          </div>
+          <div class="flex items-center w-full form-control mt-6">
+            <button id="temporalOut" class="w-2/6 btn btn-primary">
+              Login
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="../src/js/products.js"></script>
+  </body>
+</html>
