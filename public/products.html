@@ -91,19 +91,20 @@
             </div>
           </li>
           <li><a href="#contactos">Contactos</a></li>
-          <li class="ms-5">
+          <li class="ms-5 indicator">
             <a href=""
-              ><i class="shop fa-duotone fa-solid fa-cart-shopping"></i
+              ><i class="text-2xl shop fa-duotone fa-solid fa-cart-shopping"></i
             ></a>
+            <span class="indicator-item badge badge-warning">1</span>
           </li>
         </ul>
         <div class="flex absolute gap-3 right-0 w-1/5 pe-4">
           <button id="logIn" class="btn btn-sm btn-primary w-2/5">
             Iniciar Sesion
           </button>
-          <button id="logOut" class="btn btn-sm btn-primary w-2/5">
-            Registrarse
-          </button>
+          <a href="./register.html" class="btn btn-sm btn-primary w-2/5"
+            >Registrarse</a
+          >
           <button class="w-8">
             <i class="fa-solid fa-right-to-bracket"></i>
           </button>
@@ -112,7 +113,7 @@
     </header>
     <main class="divide-y-8 divide-black">
       <section id="motor" class="bg-[#F7EED3]">
-        <div class="products">
+        <div class="products mt-[65px]">
           <h2>Motor y Transmisión</h2>
           <div class="cont-product">
             <ul class="product">
@@ -972,7 +973,7 @@
       class="form_cont flex justify-center items-center w-full h-screen fixed top-0 bg-black bg-opacity-40 z-[9999] text-white"
     >
       <form
-        class="form_login flex flex-col items-center gap-5 w-1/5 h-[450px] py-8 px-4 bg-white rounded"
+        class="form_login flex flex-col items-center gap-5 w-2/5 h-[450px] py-8 px-4 bg-white rounded"
       >
         <h1 class="text-5xl text-black">Inicia Sesion</h1>
         <div class="w-full items-center flex flex-col">
@@ -1009,97 +1010,7 @@
         </div>
       </form>
     </div>
-    <div
-      id="formLogOut"
-      class="form_cont_logout flex justify-center items-center w-full h-screen fixed top-0 bg-black bg-opacity-40 z-[9999] text-white"
-    >
-      <form
-        class="form_logout flex flex-col items-center gap-4 w-1/5 h-[700px] py-8 px-4 bg-white rounded"
-      >
-        <h1 class="text-5xl text-black">Registrarse</h1>
-        <div class="w-full items-center flex flex-col gap-3">
-          <div class="flex items-center w-full form-control">
-            <input
-              type="email"
-              placeholder="email"
-              class="w-3/4 input input-bordered"
-              required
-            />
-          </div>
-          <div class="flex items-center w-full form-control">
-            <input
-              type="text"
-              placeholder="name"
-              class="w-3/4 input input-bordered"
-              required
-            />
-          </div>
-          <div class="flex items-center w-full form-control">
-            <input
-              type="text"
-              placeholder="last-name"
-              class="w-3/4 input input-bordered"
-              required
-            />
-          </div>
-          <div class="flex items-center w-full form-control">
-            <input
-              type="text"
-              placeholder="addres"
-              class="w-3/4 input input-bordered"
-              required
-            />
-          </div>
-          <div class="flex flex-row justify-center w-full form-control">
-            <select class="select select-secondary px-5">
-              <option disabled selected>+..</option>
-              <option>+57</option>
-              <option>+52</option>
-              <option>+53</option>
-              <option>+54</option>
-              <option>+45</option>
-              <option>+64</option>
-              <option>+52</option>
-              <option>+61</option>
-            </select>
-            <input
-              type="number"
-              placeholder="phone number"
-              class="w-3/5 input input-bordered"
-              required
-            />
-          </div>
-          <div class="flex items-center w-full form-control">
-            <input
-              type="password"
-              placeholder="password"
-              class="w-3/4 input input-bordered"
-              required
-            />
-          </div>
-          <div class="flex items-center w-full form-control">
-            <input
-              type="password"
-              placeholder="repeat password"
-              class="w-3/4 input input-bordered"
-              required
-            />
-          </div>
-          <div class="flex">
-            <input type="checkbox" checked="checked" class="checkbox" />Al
-            <p class="text-black text-left">
-              AL registrarte en nuestro sitio web, aceptas cumplir con los
-              Términos y Condiciones establecidos.
-            </p>
-          </div>
-          <div class="flex items-center w-full form-control mt-6">
-            <button id="temporalOut" class="w-2/6 btn btn-primary">
-              Login
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
+
     <script src="../src/js/products.js"></script>
   </body>
 </html>
