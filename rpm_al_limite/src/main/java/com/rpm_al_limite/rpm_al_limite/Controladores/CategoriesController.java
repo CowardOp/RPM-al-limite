@@ -31,7 +31,7 @@ public class CategoriesController {
     }
 
     @CrossOrigin(origins = "*")
-    @GetMapping("{/id}")
+    @GetMapping("/{id}")
     public ResponseEntity<?> listCategoryById(@PathVariable(value = "id") Integer id) {
         Optional<Categories> category = service.findById(id);
         if (category.isPresent()) {

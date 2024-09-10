@@ -32,7 +32,7 @@ public class ProductsController {
     }
 
     @CrossOrigin(origins = "*")
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<?> listProductById(@PathVariable(value = "id") Integer id) {
         Optional<Products> products = service.findById(id);
         if (products.isPresent()) {

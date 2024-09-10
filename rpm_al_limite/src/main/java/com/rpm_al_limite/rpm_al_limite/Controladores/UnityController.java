@@ -30,7 +30,7 @@ public class UnityController {
     }
 
     @CrossOrigin(origins = "*")
-    @GetMapping
+    @GetMapping("/{id}")
     public ResponseEntity<?> listUnityById(@PathVariable(value = "id") Integer id) {
         Optional<Unity> unity = service.findById(id);
         if (unity.isPresent()) {
