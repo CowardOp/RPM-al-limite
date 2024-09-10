@@ -11,7 +11,7 @@ import com.rpm_al_limite.rpm_al_limite.Repositorios.UnityRepository;
 import com.rpm_al_limite.rpm_al_limite.Servicios.Interfaces.UnityInt;
 
 @Service
-public class BrandImplements implements UnityInt {
+public class UnityImplements implements UnityInt {
 
     @Autowired
     private UnityRepository repository;
