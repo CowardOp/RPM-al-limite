@@ -6,28 +6,28 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.rpm_al_limite.rpm_al_limite.Entidades.Brand;
-import com.rpm_al_limite.rpm_al_limite.Repositorios.BrandRepository;
-import com.rpm_al_limite.rpm_al_limite.Servicios.Interfaces.BrandsInt;
+import com.rpm_al_limite.rpm_al_limite.Entidades.Unity;
+import com.rpm_al_limite.rpm_al_limite.Repositorios.UnityRepository;
+import com.rpm_al_limite.rpm_al_limite.Servicios.Interfaces.UnityInt;
 
 @Service
-public class BrandImplements implements BrandsInt {
+public class BrandImplements implements UnityInt {
 
     @Autowired
-    private BrandRepository repository;
+    private UnityRepository repository;
 
     @Override
-    public List<Brand> findAll() {
+    public List<Unity> findAll() {
         return repository.findAll();
     }
 
     @Override
-    public Optional<Brand> findById(Integer id) {
+    public Optional<Unity> findById(Integer id) {
         return repository.findById(id);
     }
 
     @Override
-    public Brand save(Brand brand) {
+    public Unity save(Unity brand) {
         return repository.save(brand);
     }
 
