@@ -9,23 +9,23 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "brands")
+@Table(name = "unity")
 public class Unity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idBrands;
+    private Integer idunity;
 
     @Column(name = "name", nullable = false, length = 100)
     @NonNull
     private String name;
 
-    public Integer getIdBrands() {
-        return idBrands;
+    public Integer getIdunity() {
+        return idunity;
     }
 
-    public void setIdBrands(Integer idBrands) {
-        this.idBrands = idBrands;
+    public void setIdunity(Integer idunity) {
+        this.idunity = idunity;
     }
 
     public String getName() {

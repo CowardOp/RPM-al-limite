@@ -40,8 +40,8 @@ public class Products {
     private Categories categoryId;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "brand_id")
-    private Unity brandId;
+    @JoinColumn(name = "unity_id")
+    private Unity unityId;
 
     public Integer getIdProduct() {
         return idProduct;
@@ -91,12 +91,12 @@ public class Products {
         this.categoryId = categoryId;
     }
 
-    public Unity getBrandId() {
-        return brandId;
+    public Unity getUnityId() {
+        return unityId;
     }
 
-    public void setBrandId(Unity brandId) {
-        this.brandId = brandId;
+    public void setUnityId(Unity unityId) {
+        this.unityId = unityId;
     }
 
 }

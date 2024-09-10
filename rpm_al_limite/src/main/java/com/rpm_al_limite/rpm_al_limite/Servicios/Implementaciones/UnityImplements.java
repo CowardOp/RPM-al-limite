@@ -27,8 +27,8 @@ public class UnityImplements implements UnityInt {
     }
 
     @Override
-    public Unity save(Unity brand) {
-        return repository.save(brand);
+    public Unity save(Unity unity) {
+        return repository.save(unity);
     }
 
     @Override
