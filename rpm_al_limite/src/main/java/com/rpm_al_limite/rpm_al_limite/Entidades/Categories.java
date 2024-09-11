@@ -14,22 +14,18 @@ public class Categories {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idCategories;
+    private Integer idcategories;
 
     @Column(name = "name", nullable = false, length = 100)
     @NonNull
     private String name;
 
-    @Column(name = "description", nullable = false, length = 100)
-    @NonNull
-    private String description;
-
-    public Integer getIdCategories() {
-        return idCategories;
+    public Integer getIdcategories() {
+        return idcategories;
     }
 
-    public void setIdCategories(Integer idCategories) {
-        this.idCategories = idCategories;
+    public void setIdcategories(Integer idcategories) {
+        this.idcategories = idcategories;
     }
 
     public String getName() {
@@ -38,14 +34,6 @@ public class Categories {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
 }

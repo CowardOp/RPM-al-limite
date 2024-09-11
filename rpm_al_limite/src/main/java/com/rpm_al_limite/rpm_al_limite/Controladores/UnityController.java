@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rpm_al_limite.rpm_al_limite.Entidades.Unity;
-import com.rpm_al_limite.rpm_al_limite.Servicios.Implementaciones.UnityImplements;
+import com.rpm_al_limite.rpm_al_limite.Servicios.Implementaciones.UnityImplement;
 
 @RestController
 @RequestMapping("/api/unity")
 public class UnityController {
     @Autowired
-    private UnityImplements service;
+    private UnityImplement service;
 
     @CrossOrigin(origins = "*")
     @GetMapping

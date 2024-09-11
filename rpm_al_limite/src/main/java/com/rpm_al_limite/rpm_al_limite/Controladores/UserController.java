@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -14,51 +15,57 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rpm_al_limite.rpm_al_limite.Entidades.Categories;
-import com.rpm_al_limite.rpm_al_limite.Servicios.Implementaciones.CategoriesImplement;
+import com.rpm_al_limite.rpm_al_limite.Entidades.User;
+import com.rpm_al_limite.rpm_al_limite.Servicios.Implementaciones.UserImplement;
 
 @RestController
-@RequestMapping("/api/categories")
-public class CategoriesController {
+@RequestMapping("/api/user")
+public class UserController {
 
     @Autowired
-    private CategoriesImplement service;
+    private UserImplement service;
 
     @CrossOrigin(origins = "*")
     @GetMapping
-    public ResponseEntity<?> listCategory() {
+    public ResponseEntity<?> listUser() {
         return ResponseEntity.ok(service.findAll());
     }
 
     @CrossOrigin(origins = "*")
     @GetMapping("/{id}")
-    public ResponseEntity<?> listCategoryById(@PathVariable(value = "id") Integer id) {
-        Optional<Categories> category = service.findById(id);
-        if (category.isPresent()) {
-            return ResponseEntity.ok(category);
+    public ResponseEntity<?> listUserById(@PathVariable(value = "id") Integer id) {
+        Optional<User> user = service.findById(id);
+        if (user.isPresent()) {
+            return ResponseEntity.ok(user);
         }
         return ResponseEntity.notFound().build();
     }
 
     @CrossOrigin(origins = "*")
     @PostMapping
-    public ResponseEntity<?> crateCategory(@RequestBody Categories category) {
-        return ResponseEntity.ok(service.save(category));
+    public ResponseEntity<?> createUser(@RequestBody User user) {
+        return ResponseEntity.ok(service.save(user));
+    }
+
+    @CrossOrigin(origins = "*")
+    @PatchMapping
+    public ResponseEntity<?> searchUser(@RequestBody User user) {
+        return ResponseEntity.ok(service.buscar(user.getEmail()));
     }
 
     @CrossOrigin(origins = "*")
     @PutMapping
-    public ResponseEntity<?> editCategory(@RequestBody Categories category) {
-        return ResponseEntity.ok(service.save(category));
+    public ResponseEntity<?> editUser(@RequestBody User user) {
+        return ResponseEntity.ok(service.save(user));
     }
 
     @CrossOrigin(origins = "*")
     @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable(value = "id") Integer id) {
-        Optional<Categories> category = service.findById(id);
-        if (category.isPresent()) {
+        Optional<User> user = service.findById(id);
+        if (user.isPresent()) {
             service.delete(id);
-            return ResponseEntity.ok(category);
+            return ResponseEntity.ok(user);
         }
         return ResponseEntity.notFound().build();
     }

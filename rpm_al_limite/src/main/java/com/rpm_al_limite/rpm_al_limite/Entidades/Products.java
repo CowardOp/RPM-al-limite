@@ -17,7 +17,7 @@ public class Products {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idProduct;
+    private Integer idproducts;
 
     @Column(name = "name", nullable = false, length = 100)
     @NonNull
@@ -31,10 +31,6 @@ public class Products {
     @NonNull
     private int stock;
 
-    @Column(name = "created_at", nullable = false, length = 11)
-    @NonNull
-    private String createdAt;
-
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "category_id")
     private Categories categoryId;
@@ -43,12 +39,16 @@ public class Products {
     @JoinColumn(name = "unity_id")
     private Unity unityId;
 
-    public Integer getIdProduct() {
-        return idProduct;
+    public Integer getIdProducts() {
+        return idproducts;
     }
 
-    public void setIdProduct(Integer idProduct) {
-        this.idProduct = idProduct;
+    public Integer getIdproducts() {
+        return idproducts;
+    }
+
+    public void setIdproducts(Integer idproducts) {
+        this.idproducts = idproducts;
     }
 
     public String getName() {
@@ -73,14 +73,6 @@ public class Products {
 
     public void setStock(int stock) {
         this.stock = stock;
-    }
-
-    public String getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
     }
 
     public Categories getCategoryId() {

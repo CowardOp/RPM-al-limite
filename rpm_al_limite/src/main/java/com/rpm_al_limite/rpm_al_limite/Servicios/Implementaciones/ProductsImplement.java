@@ -23,7 +23,7 @@ public class ProductsImplement implements ProductsInt {
 
     @Override
     public Optional<List<Products>> buscar(String texto) {
-        return repository.findByNameLikeOrCreatedAt("%" + texto + "%", texto);
+        return repository.findByName("%" + texto + "%");
     }
 
     @Override

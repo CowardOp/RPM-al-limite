@@ -11,7 +11,7 @@ import com.rpm_al_limite.rpm_al_limite.Repositorios.CategoriesRepository;
 import com.rpm_al_limite.rpm_al_limite.Servicios.Interfaces.CategoriesInt;
 
 @Service
-public class CategoriesImplements implements CategoriesInt {
+public class CategoriesImplement implements CategoriesInt {
 
     @Autowired
     private CategoriesRepository repository;

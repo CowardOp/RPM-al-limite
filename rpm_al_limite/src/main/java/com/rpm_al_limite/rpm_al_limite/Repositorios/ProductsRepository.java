@@ -8,6 +8,6 @@ import com.rpm_al_limite.rpm_al_limite.Entidades.Products;
 
 public interface ProductsRepository extends JpaRepository<Products, Integer> {
 
-    Optional<List<Products>> findByNameLikeOrCreatedAt(String name, String createdAt);
+    Optional<List<Products>> findByName(String name);
 
 }
