@@ -9,11 +9,9 @@ public interface UserInt {
 
     public List<User> findAll();
 
-    public Optional<User> findById(Integer id);
+    public Optional<User> findById(Integer email);
 
     public User save(User user);
 
     public void delete(Integer id);
-
-    public Optional<User> buscar(String email);
 }

@@ -6,9 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.rpm_al_limite.rpm_al_limite.Entidades.User;
 import com.rpm_al_limite.rpm_al_limite.Repositorios.UserRepository;
 import com.rpm_al_limite.rpm_al_limite.Servicios.Interfaces.UserInt;
-import com.rpm_al_limite.rpm_al_limite.Entidades.User;
 
 @Service
 public class UserImplement implements UserInt {
@@ -19,11 +19,6 @@ public class UserImplement implements UserInt {
     @Override
     public List<User> findAll() {
         return repository.findAll();
-    }
-
-    @Override
-    public Optional<User> buscar(String email) {
-        return repository.findByEmail(email);
     }
 
     @Override

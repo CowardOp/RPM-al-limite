@@ -7,7 +7,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "user")
@@ -39,7 +39,7 @@ public class User {
 
     @Column(name = "created_at", nullable = false)
     @NonNull
-    private LocalDateTime created_at;
+    private LocalDate created_at;
 
     public Integer getIduser() {
         return iduser;
@@ -89,11 +89,11 @@ public class User {
         this.address = address;
     }
 
-    public LocalDateTime getCreated_at() {
+    public LocalDate getCreated_at() {
         return created_at;
     }
 
-    public void setCreated_at(LocalDateTime created_at) {
+    public void setCreated_at(LocalDate created_at) {
         this.created_at = created_at;
     }
 

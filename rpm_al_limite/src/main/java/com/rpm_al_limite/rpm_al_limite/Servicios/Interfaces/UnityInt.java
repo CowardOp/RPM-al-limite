@@ -10,7 +10,7 @@ public interface UnityInt {
 
     public Optional<Unity> findById(Integer id);
 
-    public Unity save(Unity brand);
+    public Unity save(Unity unity);
 
     public void delete(Integer id);
 }
