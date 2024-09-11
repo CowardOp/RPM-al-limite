@@ -38,7 +38,7 @@ s
 /* Tamaño de botón pequeño */
 
 .btn-xs {
-  padding: 0.25rem 0.5rem;
+  padding: 0.6rem 0.75rem;
   font-size: 0.75rem;
   line-height: 1rem;
 }
@@ -48,8 +48,8 @@ s
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  margin: 0 15px;
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
   white-space: nowrap;
@@ -62,7 +62,7 @@ s
 .btn-accent {
   background-color: #37cdbe;
   border-color: transparent;
-  color: white;
+  color: #fff;
 }
 
 .btn-accent:hover {
@@ -73,7 +73,7 @@ s
 .btn-error {
   background-color: #f87272;
   border-color: transparent;
-  color: white;
+  color: #fff;
 }
 
 .btn-error:hover {

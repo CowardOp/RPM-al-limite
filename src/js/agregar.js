@@ -14,13 +14,12 @@ const otroProducto = async () => {
     data.forEach((producto) => {
       items.push(`
         <tr>
-          <th>${producto.name}</th>
-          <th>${producto.price}</th> 
-          <th>${producto.stock}</th>
-          <th>${producto.categoryId.name}</th>
-          <th>${producto.unityId.name}</th>
-          <th><button class="btn btn-xs btn-accent">Editar</button></th>
-          <th><button class="btn btn-xs btn-error">Eliminar</button></th>
+          <th class="text-xl">${producto.name}</th>
+          <th class="text-xl">${producto.price}</th> 
+          <th class="text-xl">${producto.stock}</th>
+          <th class="text-xl">${producto.categoryId.name}</th>
+          <th class="text-xl">${producto.unityId.name}</th>
+          <th class="flex justify-center"><button class="btn btn-xs btn-accent">Editar</button><button class="btn btn-xs btn-error">Eliminar</button></th>
         </tr>
       `);
     });
