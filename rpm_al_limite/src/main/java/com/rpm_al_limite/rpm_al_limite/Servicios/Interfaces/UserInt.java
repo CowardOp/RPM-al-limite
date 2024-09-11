@@ -15,5 +15,5 @@ public interface UserInt {
 
     public void delete(Integer id);
 
-    public Optional<List<User>> buscar(String email);
+    public Optional<User> buscar(String email);
 }

@@ -22,8 +22,8 @@ public class UserImplement implements UserInt {
     }
 
     @Override
-    public Optional<List<User>> buscar(String texto) {
-        return repository.findByEmail("%" + texto + "%");
+    public Optional<User> buscar(String email) {
+        return repository.findByEmail(email);
     }
 
     @Override
