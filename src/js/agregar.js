@@ -9,10 +9,10 @@ const otroProducto = async () => {
     }
     const data = await response.json();
 
-    agregarProductosNuevos.innerHTML = "";
+    let items = [];
 
     data.forEach((producto) => {
-      agregarProductosNuevos.innerHTML += `
+      items.push(`
         <tr>
           <th>${producto.name}</th>
           <th>${producto.price}</th> 
@@ -22,8 +22,10 @@ const otroProducto = async () => {
           <th><button class="btn btn-xs btn-accent">Editar</button></th>
           <th><button class="btn btn-xs btn-error">Eliminar</button></th>
         </tr>
-      `;
+      `);
     });
+
+    agregarProductosNuevos.innerHTML = items.join("");
   } catch (e) {
     console.log(`Error ${e}`);
   }
