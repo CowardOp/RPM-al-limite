@@ -14,32 +14,30 @@ import com.rpm_al_limite.rpm_al_limite.Servicios.Interfaces.ProductsInt;
 public class ProductsImplement implements ProductsInt {
 
     @Autowired
-    private ProductsRepository repository;
+    private ProductsRepository productsRepository;
 
     @Override
-    public List<Products> findAll() {
-        return repository.findAll();
+    public List<Products> getAllProducts() {
+        return productsRepository.findAll();
     }
 
     @Override
-    public Optional<List<Products>> buscar(String texto) {
-        return repository.findByName("%" + texto + "%");
+    public Optional<Products> getProductById(Integer id) {
+        return productsRepository.findById(id);
     }
 
     @Override
-    public Optional<Products> findById(Integer id) {
-        return repository.findById(id);
+    public Products saveProduct(Products product) {
+        return productsRepository.save(product);
     }
 
     @Override
-    public Products save(Products products) {
-        return repository.save(products);
+    public void deleteProduct(Integer id) {
+        productsRepository.deleteById(id);
     }
 
     @Override
-    public void delete(Integer id) {
-        repository.deleteById(id);
-        ;
+    public Optional<List<Products>> getProductsByName(String name) {
+        return productsRepository.findByName(name);
     }
-
 }

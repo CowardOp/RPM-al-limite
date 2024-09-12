@@ -36,4 +36,9 @@ public class Categories {
         this.name = name;
     }
 
+    public Object getId() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getId'");
+    }
+
 }
