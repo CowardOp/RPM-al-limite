@@ -7,13 +7,13 @@ import com.rpm_al_limite.rpm_al_limite.Entidades.Products;
 
 public interface ProductsInt {
 
-    List<Products> getAllProducts();
+    public List<Products> findAll();
 
-    Optional<Products> getProductById(Integer id);
+    public Optional<Products> findById(Integer id);
 
-    Products saveProduct(Products product);
+    public Products save(Products products);
 
-    void deleteProduct(Integer id);
+    public void delete(Integer id);
 
-    Optional<List<Products>> getProductsByName(String name);
+    public Optional<List<Products>> buscar(String name);
 }
