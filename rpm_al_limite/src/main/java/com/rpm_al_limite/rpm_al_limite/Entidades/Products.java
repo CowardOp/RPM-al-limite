@@ -10,7 +10,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "products")
 public class Products {
@@ -32,63 +34,13 @@ public class Products {
     private int stock;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "category_id")
-    private Categories category_id;
+    @JoinColumn(name = "category_id", nullable = false)
+    @NonNull
+    private Categories category;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "unity_id")
-    private Unity unity_id;
-
-    public Integer getIdProducts() {
-        return idproducts;
-    }
-
-    public Integer getIdproducts() {
-        return idproducts;
-    }
-
-    public void setIdproducts(Integer idproducts) {
-        this.idproducts = idproducts;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public int getStock() {
-        return stock;
-    }
-
-    public void setStock(int stock) {
-        this.stock = stock;
-    }
-
-    public Categories getCategoryId() {
-        return category_id;
-    }
-
-    public void setCategoryId(Categories category_id) {
-        this.category_id = category_id;
-    }
-
-    public Unity getUnityId() {
-        return unity_id;
-    }
-
-    public void setUnityId(Unity unity_id) {
-        this.unity_id = unity_id;
-    }
+    @JoinColumn(name = "unity_id", nullable = false)
+    @NonNull
+    private Unity unity;
 
 }

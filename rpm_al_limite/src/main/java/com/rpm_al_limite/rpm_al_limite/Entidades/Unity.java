@@ -7,7 +7,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "unity")
 public class Unity {
@@ -19,21 +21,5 @@ public class Unity {
     @Column(name = "name", nullable = false, length = 100)
     @NonNull
     private String name;
-
-    public Integer getIdunity() {
-        return idunity;
-    }
-
-    public void setIdunity(Integer idunity) {
-        this.idunity = idunity;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
 }

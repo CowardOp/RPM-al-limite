@@ -42,7 +42,7 @@ public class CartsController {
 
     @CrossOrigin(origins = "*")
     @PostMapping
-    public ResponseEntity<?> crateCarts(@RequestBody Carts carts) {
+    public ResponseEntity<?> createCarts(@RequestBody Carts carts) {
         return ResponseEntity.ok(service.save(carts));
     }
 

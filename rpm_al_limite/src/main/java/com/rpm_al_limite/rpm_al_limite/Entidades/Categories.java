@@ -7,7 +7,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "categories")
 public class Categories {
@@ -19,25 +21,5 @@ public class Categories {
     @Column(name = "name", nullable = false, length = 100)
     @NonNull
     private String name;
-
-    public Integer getIdcategories() {
-        return idcategories;
-    }
-
-    public void setIdcategories(Integer idcategories) {
-        this.idcategories = idcategories;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Object getId() {
-        return idcategories;
-    }
 
 }

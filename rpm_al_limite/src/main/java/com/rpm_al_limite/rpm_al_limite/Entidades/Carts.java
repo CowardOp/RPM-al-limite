@@ -9,10 +9,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.Data;
+
 import java.time.LocalDate;
 
 import io.micrometer.common.lang.NonNull;
 
+@Data
 @Entity
 @Table(name = "carts")
 public class Carts {
@@ -31,26 +34,6 @@ public class Carts {
 
     public Integer getIdcarts() {
         return idcarts;
-    }
-
-    public void setIdcarts(Integer idcarts) {
-        this.idcarts = idcarts;
-    }
-
-    public LocalDate getCreated_at() {
-        return created_at;
-    }
-
-    public void setCreated_at(LocalDate created_at) {
-        this.created_at = created_at;
-    }
-
-    public User getUserId() {
-        return user_id;
-    }
-
-    public void setUserId(User user_id) {
-        this.user_id = user_id;
     }
 
 }

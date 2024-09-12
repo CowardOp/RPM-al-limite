@@ -44,12 +44,7 @@ public class ProductsController {
     @CrossOrigin(origins = "*")
     @PostMapping
     public ResponseEntity<?> createProduct(@RequestBody Products products) {
-        if (products.getCategoryId() == null || products.getUnityId() == null) {
-            return ResponseEntity.badRequest().body("Category and Unity must be provided.");
-        }
-
-        Products savedProduct = service.save(products);
-        return ResponseEntity.ok(savedProduct);
+        return ResponseEntity.ok(service.save(products));
     }
 
     @CrossOrigin(origins = "*")
