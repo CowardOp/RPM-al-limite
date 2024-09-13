@@ -14,5 +14,4 @@ public interface CategoriesInt {
     public Categories save(Categories categories);
 
     public void delete(Integer id);
-
 }

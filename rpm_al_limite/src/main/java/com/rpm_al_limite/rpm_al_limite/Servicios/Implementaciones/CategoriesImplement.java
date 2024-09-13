@@ -35,5 +35,4 @@ public class CategoriesImplement implements CategoriesInt {
     public void delete(Integer id) {
         repository.deleteById(id);
     }
-
 }

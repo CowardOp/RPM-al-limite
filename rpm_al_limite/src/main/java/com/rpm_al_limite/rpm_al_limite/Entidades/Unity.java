@@ -16,7 +16,7 @@ public class Unity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idunity;
+    private Integer id;
 
     @Column(name = "name", nullable = false, length = 100)
     @NonNull

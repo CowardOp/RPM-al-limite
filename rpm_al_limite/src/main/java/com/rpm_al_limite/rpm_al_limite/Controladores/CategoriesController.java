@@ -25,40 +25,34 @@ public class CategoriesController {
     private CategoriesImplement service;
 
     @CrossOrigin(origins = "*")
-    @GetMapping
-    public ResponseEntity<?> listCategory() {
-        return ResponseEntity.ok(service.findAll());
-    }
-
-    @CrossOrigin(origins = "*")
     @GetMapping("/{id}")
     public ResponseEntity<?> listCategoryById(@PathVariable(value = "id") Integer id) {
-        Optional<Categories> category = service.findById(id);
-        if (category.isPresent()) {
-            return ResponseEntity.ok(category);
+        Optional<Categories> categories = service.findById(id);
+        if (categories.isPresent()) {
+            return ResponseEntity.ok(categories);
         }
         return ResponseEntity.notFound().build();
     }
 
     @CrossOrigin(origins = "*")
     @PostMapping
-    public ResponseEntity<?> crateCategory(@RequestBody Categories category) {
-        return ResponseEntity.ok(service.save(category));
+    public ResponseEntity<?> createCategory(@RequestBody Categories categories) {
+        return ResponseEntity.ok(service.save(categories));
     }
 
     @CrossOrigin(origins = "*")
     @PutMapping
-    public ResponseEntity<?> editCategory(@RequestBody Categories category) {
-        return ResponseEntity.ok(service.save(category));
+    public ResponseEntity<?> editCategory(@RequestBody Categories categories) {
+        return ResponseEntity.ok(service.save(categories));
     }
 
     @CrossOrigin(origins = "*")
     @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable(value = "id") Integer id) {
-        Optional<Categories> category = service.findById(id);
-        if (category.isPresent()) {
+        Optional<Categories> categories = service.findById(id);
+        if (categories.isPresent()) {
             service.delete(id);
-            return ResponseEntity.ok(category);
+            return ResponseEntity.ok(categories);
         }
         return ResponseEntity.notFound().build();
     }

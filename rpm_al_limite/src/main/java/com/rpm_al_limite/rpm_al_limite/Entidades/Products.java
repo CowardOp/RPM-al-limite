@@ -19,7 +19,7 @@ public class Products {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idproducts;
+    private Integer id;
 
     @Column(name = "name", nullable = false, length = 100)
     @NonNull
@@ -34,13 +34,13 @@ public class Products {
     private int stock;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "category_id", nullable = false)
+    @JoinColumn(name = "category_id")
     @NonNull
-    private Categories category;
+    private Categories categoryId;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "unity_id", nullable = false)
+    @JoinColumn(name = "unity_id")
     @NonNull
-    private Unity unity;
+    private Unity unityId;
 
 }
