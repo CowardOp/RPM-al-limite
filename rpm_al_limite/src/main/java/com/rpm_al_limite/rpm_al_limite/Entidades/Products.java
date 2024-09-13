@@ -1,7 +1,7 @@
 package com.rpm_al_limite.rpm_al_limite.Entidades;
 
 import io.micrometer.common.lang.NonNull;
-import jakarta.persistence.CascadeType;
+// import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -33,9 +33,14 @@ public class Products {
     @NonNull
     private int stock;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "unity_id")
     @NonNull
     private Unity unityId;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    @NonNull
+    private Category categoryId;
 
 }
