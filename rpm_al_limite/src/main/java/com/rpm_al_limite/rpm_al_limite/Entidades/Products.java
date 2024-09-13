@@ -34,11 +34,6 @@ public class Products {
     private int stock;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "category_id")
-    @NonNull
-    private Categories categoryId;
-
-    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "unity_id")
     @NonNull
     private Unity unityId;

@@ -14,46 +14,54 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rpm_al_limite.rpm_al_limite.Entidades.Categories;
-import com.rpm_al_limite.rpm_al_limite.Servicios.Implementaciones.CategoriesImplement;
+import com.rpm_al_limite.rpm_al_limite.Entidades.Category;
+import com.rpm_al_limite.rpm_al_limite.Servicios.Implementaciones.CategoryImplement;
 
 @RestController
-@RequestMapping("/api/categories")
-public class CategoriesController {
+@RequestMapping("/api/category")
+public class CategoryController {
 
     @Autowired
-    private CategoriesImplement service;
+    private CategoryImplement service;
 
     @CrossOrigin(origins = "*")
-    @GetMapping("/{id}")
+    @GetMapping
+    public ResponseEntity<?> listCategory() {
+        return ResponseEntity.ok(service.findAll());
+    }
+
+    @CrossOrigin(origins = "*")
+    @GetMapping
     public ResponseEntity<?> listCategoryById(@PathVariable(value = "id") Integer id) {
-        Optional<Categories> categories = service.findById(id);
-        if (categories.isPresent()) {
-            return ResponseEntity.ok(categories);
+        Optional<Category> category = service.findById(id);
+        if (category.isPresent()) {
+            return ResponseEntity.ok(category);
         }
+
         return ResponseEntity.notFound().build();
     }
 
     @CrossOrigin(origins = "*")
     @PostMapping
-    public ResponseEntity<?> createCategory(@RequestBody Categories categories) {
-        return ResponseEntity.ok(service.save(categories));
+    public ResponseEntity<?> createCategory(@RequestBody Category category) {
+        return ResponseEntity.ok(service.save(category));
     }
 
     @CrossOrigin(origins = "*")
     @PutMapping
-    public ResponseEntity<?> editCategory(@RequestBody Categories categories) {
-        return ResponseEntity.ok(service.save(categories));
+    public ResponseEntity<?> editCategory(@RequestBody Category category) {
+        return ResponseEntity.ok(service.save(category));
     }
 
     @CrossOrigin(origins = "*")
     @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable(value = "id") Integer id) {
-        Optional<Categories> categories = service.findById(id);
-        if (categories.isPresent()) {
+        Optional<Category> category = service.findById(id);
+        if (category.isPresent()) {
             service.delete(id);
-            return ResponseEntity.ok(categories);
+            return ResponseEntity.ok(category);
         }
         return ResponseEntity.notFound().build();
     }
+
 }

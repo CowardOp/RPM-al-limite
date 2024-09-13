@@ -22,7 +22,7 @@ public class Carts {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idcarts;
+    private Integer id;
 
     @Column(name = "created_at", nullable = false)
     @NonNull
@@ -31,9 +31,5 @@ public class Carts {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
     private User user_id;
-
-    public Integer getIdcarts() {
-        return idcarts;
-    }
 
 }
