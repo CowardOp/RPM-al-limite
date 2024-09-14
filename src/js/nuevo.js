@@ -1,4 +1,4 @@
-urlServicioCategories = "http://localhost:8081/api/categories";
+urlServicioCategories = "http://localhost:8081/api/category";
 urlServicioUnity = "http://localhost:8081/api/unity";
 urlServicioProducts = "http://localhost:8081/api/products";
 
