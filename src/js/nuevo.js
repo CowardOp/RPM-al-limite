@@ -58,7 +58,7 @@ const nuevoProducto = () => {
 
   var data = convertirFormDataAJSON($("#formNuevo"));
 
-  var success = (response) => {
+  var resultado = (response) => {
     alert("El producto fue agregado");
     window.location.href = "agregar.html";
   };
@@ -72,7 +72,7 @@ const nuevoProducto = () => {
     url: urlServicioProducts,
     data: data,
     dataType: "json",
-    success: success,
+    success: resultado,
   });
 };
 

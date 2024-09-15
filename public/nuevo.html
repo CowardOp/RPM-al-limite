@@ -42,13 +42,13 @@
           </div>
           <div class="form-control">
             <label class="label">
-              <span class="label-text">stock</span>
+              <span class="label-text">Stock</span>
             </label>
             <input
               name="stock"
               id="stock"
               type="number"
-              placeholder="stock"
+              placeholder="Stock"
               class="input input-bordered"
               required
             />
@@ -62,7 +62,6 @@
               name="categoria"
               id="categoryId"
             >
-              Categoria
               <option class="text-white" disabled selected>
                 Seleccione una categoria
               </option>
@@ -73,11 +72,17 @@
               <span class="label-text">Unidad</span>
             </label>
             <select class="select select-bordered" name="unidad" id="unityId">
-              Unidad
+              <option class="text-white" disabled selected>
+                Seleccione una unidad
+              </option>
             </select>
           </div>
           <div class="form-control mt-6">
-            <button onclick="nuevoProducto();" class="btn btn-primary">
+            <button
+              type="button"
+              onclick="nuevoProducto();"
+              class="btn btn-primary"
+            >
               Agregar
             </button>
           </div>
